@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Dawnloads Api</title>
+</head>
+<body>
+    <script>
+            var url = document.URL.replace("fileDawnloads","")
+            url = url.replace(".html","")
+            const json = {
+                "files":[
+                    url+"img/ConfigureIcon.png"
+                ]
+            }
+            console.log(json)
+            document.body.innerHTML = JSON.stringify(json)
+    </script>
+</body>
+</html>
